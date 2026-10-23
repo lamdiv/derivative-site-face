@@ -73,10 +73,10 @@ dialog.addEventListener('click', event => { if (event.target === dialog) { const
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 const featureData = {
-  spaces: ['SPACES', 'Keep your worlds<br> separate.', 'Work, personal, or a project of its own. Each Space has its own tabs, favorites, and persistent website sign-ins.', 'Try switching Spaces at the bottom of the sidebar.'],
-  sidebar: ['SIDEBAR', 'More room for<br> the page.', 'Keep the sidebar fixed, reveal it on hover, or hide it. Your webpage keeps its layout while the sidebar floats over it.', 'The preview shows the sidebar tucked away.'],
-  split: ['SPLIT VIEW', 'Two pages.<br> One view.', 'Read alongside your notes. Compare two pages. Drag a tab onto another to keep both pages live, side by side.', 'Split view is temporary. Your tabs stay saved.'],
-  search: ['SEARCH', 'A shortcut to<br> what’s next.', 'Press ⌘T to search or enter an address. Find an open tab, revisit a page, or go somewhere new.', 'Click the search preview to try finding a tab.']
+  spaces: ['Spaces', 'Work and the rest of life don’t share a session.', 'Each Space keeps its own tabs, favorites, and website sign-ins. Switch at the bottom of the sidebar.', 'Try the three Space buttons in the preview.'],
+  sidebar: ['Sidebar', 'The page can have the whole window.', 'Pin the sidebar, show it on hover, or hide it. The webpage keeps its layout either way.', 'This preview tucks the sidebar away.'],
+  split: ['Split view', 'Two pages, still in their tabs.', 'Drop a tab onto another to read them together. Split view is temporary; the tabs stay where you left them.', 'The right pane is a stand-in for a second page.'],
+  search: ['Search', '⌘T for a tab, a page, or an address.', 'Search open tabs and type a URL from one field. The preview is illustrative — it only knows these sample pages.', 'Click search in the sidebar to try it.']
 };
 const featureButtons = [...document.querySelectorAll('[data-feature][role="tab"]')];
 function selectFeature(button) {
